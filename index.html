@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <script src="./index.js" defer></script>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div class="outer">
+
+        <div>
+
+        </div>
+        <div class="inwrapper">
+            <h1 class="heading">Temperature Converter</h1>
+            <form class="converter_form">
+                <div>
+                    <div class="valuediv">
+                        <span>Degrees</span>
+                        <div class="picker_degree_div">
+                            <input name="value" class="temp" type="number" />
+                            <select name="picker_degree" class="picker_degree">
+                                <option value="F"> F</option>
+                                <option value="C"> C</option>
+                                <option value="K"> K</option>
+                            </select>
+                        </div>
+
+                    </div>
+                    <div class="pickerdiv">
+                        <span>Type</span>
+                        <select name="picker" class="picker">
+                            <option value="F"> Fahrenheit</option>
+                            <option value="C"> celsius</option>
+                            <option value="K"> kelvin</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <div class="resultdiv">
+                        <span>Result</span>
+                        <input class="result" name="result" disabled="disabled" />
+                    </div>
+                </div>
+
+                <button type="submit" class="submit_btn"> Convert</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
